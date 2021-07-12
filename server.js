@@ -13,7 +13,6 @@ server.on('connection', (ws, request) => {
         console.log("ws.port => ", ws.port);
         console.log("ws.url => ", ws.url);
     ws.id= ws.ipAddress + ":" + ws.port + ":" + ws.unique;
-    //ws.id = "あきふみ";
     // クライアントからのデータ受信時に呼ばれる
     ws.on('message', message => {
         // クライアント側からおくられたroom_idをキャストして取得
